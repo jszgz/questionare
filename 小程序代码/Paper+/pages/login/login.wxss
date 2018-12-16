@@ -1,0 +1,50 @@
+#logo {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 100rpx;
+  margin-bottom: 20rpx;
+}
+
+#logowrap {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#appname{
+    margin-bottom: 30rpx;
+}
+.small{
+    font-size: 8pt;
+    color: #888888;
+}
+#requestwrap{
+    margin: 80rpx 40rpx;
+}
+#wantto{
+    margin-bottom: 40rpx;
+}
+#private{
+    margin-top: 50rpx;
+    color: #3cc51f;
+    font-size: 11pt;
+    margin-bottom: 30rpx;
+}
+#buttonwrap{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70rpx;
+}
+button{
+    width:300rpx;
+}
+#linewrap{
+  content: " ";
+  left: 0;
+  top: 400rpx;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  position: absolute;
+  margin: 0 40rpx;
+}

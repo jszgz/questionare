@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project adv-config="true">
+  <add-on id="spring.web"/>
+  <container path="com.genuitec.runtime.library/com.genuitec.struts_2.1">
+    <disable name="antlr-2.7.2.jar" type="jar"/>
+    <disable name="struts2-convention-plugin-2.2.1.jar" type="jar"/>
+    <disable name="struts2-spring-plugin-2.2.1.jar" type="jar"/>
+  </container>
+</project>

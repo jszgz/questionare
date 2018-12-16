@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="common" extends="json-default">
+		<action name="login" class="com.wt.action.UserAction"
+			method="login">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result name="success" type="json" />
+		</action>
+		<action name="submitnewsurvey" class="com.wt.action.SurveyAction"
+			method="submitnewsurvey">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result name="success" type="json" />
+		</action>
+		<action name="showAllSurvey" class="com.wt.action.SurveyAction"
+			method="showAllSurvey">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result name="success" type="json" />
+		</action>
+		<action name="showSurvey" class="com.wt.action.SurveyAction"
+			method="showSurvey">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result name="success" type="json" />
+		</action>
+		<action name="completeSurvey" class="com.wt.action.SurveyAction"
+			method="completeSurvey">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result name="success" type="json" />
+		</action>
+		<action name="statistics" class="com.wt.action.SurveyAction"
+			method="statistics">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result name="success" type="json" />
+		</action>
+		<action name="showAllUserSurvey" class="com.wt.action.SurveyAction"
+			method="showAllUserSurvey">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result name="success" type="json" />
+		</action>
+	</package>
+</struts>    

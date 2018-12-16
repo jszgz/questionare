@@ -1,0 +1,108 @@
+page {
+  background-color: #f8f8f8;
+}
+
+#login_bg {
+  width: 750rpx;
+  height: 1180rpx;
+}
+
+#logintintwrap {
+  color: #fff;
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 750rpx;
+}
+
+#logintint {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+#motto {
+  margin: 300rpx 40rpx;
+  font-size: 20pt;
+}
+
+#loginbutton {
+  width: 300rpx;
+  margin-top: 500rpx;
+}
+
+#minebg {
+  background: #30c17b;
+  width: 100%;
+  height: 220rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  position: absolute;
+  top: 10rpx;
+  left: 0rpx;
+}
+
+.userinfo-point {
+  position: absolute;
+  bottom: 10rpx;
+  left: 0rpx;
+  font-size: 10pt;
+}
+
+.userinfo-text {
+  position: relative;
+  margin: 20rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 128rpx;
+  width: 300rpx;
+}
+
+.operationwrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+  line-height: 2.51;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  color: #353535;
+  position: relative;
+}
+
+.operation:first-child::before {
+  display: none;
+}
+
+.operation::before {
+  content: " ";
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  position: absolute;
+}
+
+.operation {
+  margin-left: 50rpx;
+  position: relative;
+}

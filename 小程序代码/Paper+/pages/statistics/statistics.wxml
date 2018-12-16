@@ -1,0 +1,75 @@
+<page>
+<button type="default" bindtap="changestyle" plain="true">切换图表样式</button>
+
+  <block wx:if="{{currentpage!=0}}">
+    <block wx:for="{{survey.queses}}" wx:key="quesorder">
+      <block wx:if="{{true}}">
+        <view class="subject">
+          <view class="question">{{item.quesorder}}.{{item.quescontent}}</view>
+          <block wx:if="{{item.questype.typeid==1}}">
+            <view class="tint">单选题</view>
+            <view class="optionwrap">
+              <radio-group name="ques{{item.quesorder}}">
+                <block wx:for="{{item.optionsForQuesid}}" wx:for-item="subitem" wx:key="optioncontent">
+                  <label class="option">
+                    <view class="quantity" style="color:{{color[index%color.length]}}">
+                      {{subitem.answers.length}}人选择
+                    </view>
+                    <view class="cell">
+                      {{subitem.optioncontent}}
+                    </view>
+                  </label>
+                </block>
+              </radio-group>
+              <block wx:if="{{style=='tiaoxing'}}">
+                <canvas style="width: 750rpx; height: 200rpx;" canvas-id="Canvastiaoxing{{item.quesorder}}">
+                </canvas>
+              </block>
+              <block wx:if="{{style=='duiji'}}">
+                <canvas style="width: 750rpx; height: 100rpx;" canvas-id="Canvasduiji{{item.quesorder}}">
+                </canvas>
+              </block>
+            </view>
+          </block>
+          <block wx:if="{{item.questype.typeid==2}}">
+            <view class="tint">多选题</view>
+            <view class="optionwrap">
+              <checkbox-group name="ques{{item.quesorder}}">
+                <block wx:for="{{item.optionsForQuesid}}" wx:for-item="subitem" wx:key="optioncontent">
+                  <label class="option" bindtap="">
+                    <view class="quantity" style="color:{{color[index%color.length]}}">
+                      {{subitem.answers.length}}人选择
+                    </view>
+                    <view class="cell">
+                      {{subitem.optioncontent}}
+                    </view>
+                  </label>
+                </block>
+              </checkbox-group>
+              <block wx:if="{{style=='tiaoxing'}}">
+                <canvas style="width: 750rpx; height: 200rpx;" canvas-id="Canvastiaoxing{{item.quesorder}}">
+                </canvas>
+              </block>
+              <block wx:if="{{style=='duiji'}}">
+                <canvas style="width: 750rpx; height: 100rpx;" canvas-id="Canvasduiji{{item.quesorder}}">
+                </canvas>
+              </block>
+            </view>
+          </block>
+          <block wx:if="{{item.questype.typeid==3}}">
+            <view class="tint">填空题</view>
+            <view class="optionwrap">
+              <checkbox-group name="ques{{item.quesorder}}">
+                <block wx:for="{{item.optionsForQuesid[0].answers}}" wx:for-item="subitem" wx:key="optioncontent">
+                  <label class="option" bindtap="">
+                    {{subitem.answercontent}}
+                  </label>
+                </block>
+              </checkbox-group>
+            </view>
+          </block>
+        </view>
+      </block>
+    </block>
+  </block>
+</page>

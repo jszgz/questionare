@@ -1,0 +1,68 @@
+Page {
+  background-color: #f8f8f8;
+}
+input {
+  background-color: #fff;
+  padding: 0rpx 40rpx;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  height: 2.58823529em;
+  margin-bottom: 20rpx;
+}
+picker{
+  background-color: #fff;
+  padding: 0rpx 40rpx;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  height: 2.58823529em;
+  margin-bottom: 20rpx;
+  line-height: 2.58823529em;
+}
+button{
+  margin: 50rpx 40rpx;
+}
+.hint {
+  margin: 20rpx 40rpx;
+  color: #353535;
+  font-size: 11pt;
+}
+.divisionwrap{
+  position: relative;
+}
+.division{
+  margin: 20rpx 40rpx;
+    content: " ";
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  position: absolute;
+}
+#optionwrap{
+  margin-top: 90rpx;
+}
+.nextptr{
+  height: 1.58823529em;
+  font-size: 10pt;
+  margin-top: -10rpx;
+}
+#addoption{
+  margin-top: 0rpx;
+   margin-bottom: 0rpx;
+}
+.ques{
+    background-color: #fff;
+  padding: 0rpx 40rpx;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  line-height: 2.58823529em;
+  margin-bottom: 20rpx;
+}
+.option{
+  font-size: 10pt;
+  color: #888888;
+  margin-left: 60rpx;
+  line-height: 1.58823529em;
+}

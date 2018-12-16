@@ -1,0 +1,48 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/show_questionnaire/show_questionnaire",
+    "pages/questionnaire/questionnaire",
+    "pages/login/login",
+    "pages/newquestionnaire/newquestionnaire",
+    "pages/mypaper/mypaper",
+    "pages/statistics/statistics",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "岂纸问卷+",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/iconfont-shouye.png",
+        "selectedIconPath": "images/tabBar/iconfont-shouye-selected.png"
+      },
+      {
+        "pagePath": "pages/questionnaire/questionnaire",
+        "text": "问卷",
+        "iconPath": "images/tabBar/iconfont-wenjuan.png",
+        "selectedIconPath": "images/tabBar/iconfont-wenjuan-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/tabBar/iconfont-wode.png",
+        "selectedIconPath": "images/tabBar/iconfont-wode-selected.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+<page>
+
+
+  <block wx:if="{{current=='survey'}}">
+    <form bindsubmit="surveycomplete">
+      <view class="hint">
+        问卷名称
+      </view>
+      <input name="surveyname" placeholder="关于...的问卷" auto-focus="true" />
+      <view class="hint">
+        问卷描述
+      </view>
+      <input name="surveydescription" placeholder="问卷的目的、意义等" />
+      <view class="hint">
+        问卷结语
+      </view>
+      <input name="surveyperoration" placeholder="感谢语" />
+      <view class="hint">
+        问卷结束时间
+      </view>
+      <picker mode="date" value="{{surveyendtime}}" bindchange="bindDateChange">结束日期：{{surveyendtime}}</picker>
+      <button type="primary" form-type="submit">下一步</button>
+    </form>
+  </block>
+
+
+  <block wx:if="{{current=='ques'}}">
+    <view class="hint">
+      题目列表
+    </view>
+    <block wx:for="{{queses}}">
+      <view class="ques">
+        {{item.quesorder}}.{{item.quescontent}}
+        <block wx:for="{{item.optionsForQuesid}}" wx:for-item="subitem">
+          <view class="option">
+            {{subitem.optioncontent}}
+          </view>
+        </block>
+      </view>
+    </block>
+    <button type="primary" bindtap="newques" size="mini" plain="true">添加新题</button>
+    <button type="primary" bindtap="completeall">提交问卷</button>
+    <button type="default" bindtap="tosurvey">转到介绍</button>
+  </block>
+
+
+  <block wx:if="{{current=='option'}}">
+    <form bindsubmit="quescomplete">
+      <view class="hint">
+        题目描述
+      </view>
+      <input name="quescontent" placeholder="您...." auto-focus="true" />
+      <view class="hint">
+        题目类型
+      </view>
+      <picker value="{{questypeid}}" range="{{questypearray}}" bindchange="bindTypeChange">{{questypearray[questypeid]}}</picker>
+      <view class="hint">
+        是否必答
+      </view>
+      <view class="hint">
+        <switch type="switch" checked="true" name="quesrequired" />
+      </view>
+
+<block wx:if="{{questypeid!=2}}">
+      <view style="text-align:center;margin:0 auto;color:#b2b2b2;font-size:9pt;">选项列表</view>
+      <view class="divisionwrap">
+        <view class="division"></view>
+      </view>
+      <view id="optionwrap">
+        <block wx:for="{{array}}">
+          <view class="hint">
+            选项
+          </view>
+          <input name="option{{index}}" placeholder="选项内容" />
+          <input name="optionnext{{index}}" placeholder="跳转题号，没有则不填" class="nextptr" type="number" />
+        </block>
+        <button id="addoption" type="primary" plain="true" size="mini" bindtap="addoption">添加选项</button>
+      </view>
+</block>
+
+
+      <button type="primary" form-type="submit">提交问题</button>
+      <button type="default" bindtap="toques">返回列表</button>
+    </form>
+  </block>
+
+
+</page>

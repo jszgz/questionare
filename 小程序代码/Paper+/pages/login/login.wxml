@@ -1,0 +1,18 @@
+<view id="logowrap">
+  <image src="https://chwangteng.cn/Paper/images/iconfont-diaochawenjuan.png" id="logo"></image>
+  <view id="appname">岂纸问卷+</view>
+  <view class="small">浙江工业大学计算机科学与技术学院、软件学院</view>
+</view>
+<view id="linewrap"></view>
+<view id="requestwrap">
+  <view id="wantto">
+    岂纸问卷需要获得以下授权：
+  </view>
+  <view class="small">
+    · 获得您的公开信息（昵称、头像等）
+  </view>
+  <view id="buttonwrap">
+    <button type="default" bindtap="rejectlogin">拒绝</button>
+    <button type="primary" bindtap="allowlogin">允许</button>
+  </view>
+</view>

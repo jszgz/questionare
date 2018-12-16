@@ -1,0 +1,40 @@
+<page>
+  <block wx:if="{{!userInfo}}">
+    <image src="https://chwangteng.cn/Paper/images/login_bg.jpg" id="login_bg"></image>
+    <view id="logintintwrap">
+      <view id="logintint">
+        <view id="motto">让问卷更简单</view>
+        <button type="primary" id="loginbutton" bindtap="tologin">登录{{test}}</button>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{userInfo}}">
+    <view id="minebg">
+    </view>
+    <view bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="userinfo-text">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-point">积分：{{userInfo.credit}}</text>
+      </view>
+    </view>
+    <view class="operationwrap">
+      <view class="operation" bindtap="newquestionnaire">
+        新建问卷 >
+      </view>
+      <view class="operation" bindtap="myquestionnaire">
+        我的问卷 >
+      </view>
+      <view class="operation">
+        我的积分 >
+      </view>
+    </view>
+    <navigator url="../about/about">
+    <view class="operationwrap">
+      <view class="operation">
+        关于 >
+      </view>
+    </view>
+</navigator>
+  </block>
+</page>

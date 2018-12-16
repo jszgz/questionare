@@ -1,0 +1,31 @@
+<page>
+
+  <!--index.wxml-->
+  <view id="wrap">
+    <view>
+      <image id="title" src="https://chwangteng.cn/Paper/images/问卷.png"></image>
+    </view>
+    <view>
+      <image id="number1" src="https://chwangteng.cn/Paper/images/number1.png"></image>
+    </view>
+    <view>
+      <image id="number2" src="https://chwangteng.cn/Paper/images/number2.png"></image>
+    </view>
+
+    <view>
+      <view>
+        <image id="feature1" src="https://chwangteng.cn/Paper/images/feature1.png"></image>
+        <image id="feature2" src="https://chwangteng.cn/Paper/images/feature2.png"></image>
+      </view>
+      <view>
+        <image id="feature3" src="https://chwangteng.cn/Paper/images/feature3.png"></image>
+        <image id="feature4" src="https://chwangteng.cn/Paper/images/feature4.png"></image>
+      </view>
+    </view>
+  </view>
+  <view id="greybg">
+  </view>
+  <image src="https://chwangteng.cn/Paper/images/1.jpg"></image>
+  <image src="https://chwangteng.cn/Paper/images/2.jpg"></image>
+  <image src="https://chwangteng.cn/Paper/images/3.jpg"></image>
+</page>

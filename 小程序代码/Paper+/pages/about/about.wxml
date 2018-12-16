@@ -1,0 +1,10 @@
+<page>
+  <image src="https://chwangteng.cn/Paper/images/me.jpg"></image>
+  <view class="hint">
+  邮箱：chwangteng@hotmail.com
+  </view>
+  <view class="hint">
+  版本：1.0.0 beta
+  </view>
+  <button bindtap="clean">清理本地存储</button>
+</page>

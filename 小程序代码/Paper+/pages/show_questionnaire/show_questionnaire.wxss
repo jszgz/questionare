@@ -1,0 +1,141 @@
+page{
+  background-color: #f8f8f8;
+}
+view{
+  display: block;
+}
+radio-group{
+  display: block;
+}
+#content{
+  z-index: 80;
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  margin: 160rpx 100rpx 10rpx 100rpx;
+}
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17pt;
+    word-wrap: break-word;
+}
+#description{
+  font-size: 11pt;
+  margin-top: 20px;
+  color: #888888;
+    word-wrap: break-word;
+}
+#bottom{
+  position: absolute;
+  top: 490rpx;
+  left: 0rpx;
+  width: 100%;
+}
+#owner{
+align-items:flex-start;
+color: #353535;
+font-size: 12pt;
+}
+#time{
+  font-size: 12pt;
+  color:#353535;
+align-items:flex-end;
+margin-top: 10px;
+}
+#startbutton{
+  margin-top: 10px;
+  width: 520rpx;
+  align-items: center;
+}
+#preface{
+
+  width: 713rpx;
+  height: 1087rpx;
+  margin: 20rpx 17rpx 0rpx 20rpx;
+}
+
+.subject{
+  margin: 30rpx 30rpx 0rpx 30rpx;
+  word-wrap: break-word;
+}
+.tint{
+  border: 1px solid;
+  width: fit-content;
+  font-size: 9pt;
+  color: #09bb07;
+  margin-top:  10rpx;
+  margin-bottom: 10rpx;
+}
+.question{
+  font-size: 15pt;
+}
+.optionwrap{
+  position: relative;
+  background-color: #fff;
+  line-height: 1.41176471;
+  margin: 20rpx -30rpx 0rpx -30rpx;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  font-size: 14pt;
+  color: #353535;
+}
+.option{
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items:center;
+  align-items: center;
+}
+.option:first-child::before{
+  display: none;
+}
+.option::before{
+  content: " ";
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  position: absolute;
+  left: 30rpx;
+}
+
+radio{
+  display: inline-block;
+  margin-right: 10rpx;
+  -webkit-tap-highlight-color: transparent;
+}
+.cell{
+  -webkit-box-flex: 1;
+  -webkit-flex:1;
+  flex: 1;
+  color: #353535;
+}
+.next{
+  margin: 0 30rpx;
+}
+.nextques{
+  margin: 20rpx 0rpx;
+}
+
+#thankswrap{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150rpx;
+}
+.thanks{
+    font-size: 20pt;
+    margin-top: 30rpx;
+}
+.thankscontent{
+    margin: 30rpx 30rpx;
+}
+#yes{
+    margin: 80rpx 40rpx;
+}

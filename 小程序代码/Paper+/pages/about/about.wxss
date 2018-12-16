@@ -1,0 +1,15 @@
+Page{
+    background-color: #fff;
+}
+.hint{
+    color: #888888;
+    font-size: 12pt;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
+}
+image{
+    width: 750rpx;
+    height: 677rpx;
+}

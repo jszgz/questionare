@@ -1,0 +1,23 @@
+<page>
+  <block wx:if="{{surveys.length==0}}">
+  <view class="nothing">
+  您还没有发布的问卷哦
+  </view>
+  <view class="nothing">
+  去新建问卷吧！
+  </view>
+  </block>
+  <block wx:if="{{surveys.length!=0}}">
+    <block wx:for="{{surveys}}">
+      <view class="cardwrap" bindtap="showdetail" id="{{item.surveyid}}">
+        <view class="">
+          <view class="hint">进行中</view>
+        </view>
+        <view class="title">《{{item.surveyname}}》</view>
+        <view class="desc">{{item.surveydescription}}</view>
+        <view class="endtime">开始时间{{item.surveystarttime}}</view>
+        <view class="endtime">结束时间{{item.surveyendtime}}</view>
+      </view>
+    </block>
+  </block>
+</page>

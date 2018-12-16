@@ -1,0 +1,108 @@
+image {
+  width: 750rpx;
+  height: 1333rpx;
+}
+
+#wrap {
+  width: 750rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#title{
+  width: 433rpx;
+  height: 88rpx;
+  margin-top: 85rpx;
+  animation: floatup 1s;
+}
+@keyframes floatup
+{
+from {margin-top: 200rpx;}
+to {}
+}
+
+#number1 {
+  width: 332rpx;
+  height: 152rpx;
+  margin-top: 50rpx;
+  position: relative;
+  animation: floatupone 1s;
+}
+@keyframes floatupone
+{
+from {margin-top: 200rpx;}
+to {}
+}
+
+#number2 {
+  width: 275rpx;
+  height: 90rpx;
+  margin-top: 50rpx;
+  animation: floatuptwo 1s;
+}
+@keyframes floatuptwo
+{
+from {margin-top: 200rpx;}
+to {}
+}
+
+#feature1{
+  margin-top: 80rpx;
+  width: 208rpx;
+  height: 266rpx;
+  margin-right: 40rpx;
+  animation: zuoshang 2.5s;
+}
+@keyframes zuoshang
+{
+from {margin-right: 0;margin-top: 300rpx; width: 104rpx;height: 133rpx;}
+to {}
+}
+
+#feature2{
+  margin-top: 80rpx;
+  width: 208rpx;
+  height: 266rpx;
+  margin-left: 40rpx;
+  animation: youshang 2.5s;
+}
+@keyframes youshang
+{
+from {margin-left: 0;margin-top: 300rpx; width: 104rpx;height: 133rpx;}
+to {}
+}
+
+#feature3{
+  margin-top: 50rpx;
+  width: 208rpx;
+  height: 266rpx;
+  margin-right: 40rpx;
+  animation: zuoxia 2.5s;
+}
+@keyframes zuoxia
+{
+from {margin-right: 0;margin-top: 100rpx;width: 104rpx;height: 133rpx;}
+to {}
+}
+
+#feature4{
+  margin-top: 50rpx;
+  width: 208rpx;
+  height: 266rpx;
+  margin-left: 40rpx;
+  animation: youxia 2.5s;
+}
+@keyframes youxia
+{
+from {margin-left: 0;margin-top: 100rpx;width: 104rpx;height: 133rpx;}
+to {}
+}
+
+#greybg{
+  width: 750rpx;
+  background-color: #38373f;
+  height: 1333rpx;
+}

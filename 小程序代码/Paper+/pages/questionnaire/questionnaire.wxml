@@ -1,0 +1,26 @@
+<page>
+  <view class="wrap">
+    <swiper indicator-dots="true" autoplay="true" interval="4000" duration="500">
+      <block wx:for="{{imgUrls}}">
+        <navigator url="../show_questionnaire/show_questionnaire?id={{item.id}}">
+          <swiper-item>
+            <image src="{{item.src}}" class="slide-image" class="swiperimage" />
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+      <block wx:for="{{surveys}}">
+<navigator url="../show_questionnaire/show_questionnaire?id={{item.surveyid}}">
+      <view class="cardwrap" bindtap="showdetail" id="{{item.surveyid}}">
+        <view class="">
+          <view class="hint">进行中</view>
+        </view>
+        <view class="title">《{{item.surveyname}}》</view>
+        <view class="desc">{{item.surveydescription}}</view>
+        <view class="endtime">开始时间{{item.surveystarttime}}</view>
+        <view class="endtime">结束时间{{item.surveyendtime}}</view>
+      </view>
+</navigator>
+    </block>
+</page>

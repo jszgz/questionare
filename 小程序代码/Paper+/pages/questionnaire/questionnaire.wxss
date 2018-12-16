@@ -1,0 +1,65 @@
+swiper-item{
+    width: 750rpx;
+    height: 375rpx;
+}
+.swiperimage{
+    width: 750rpx;
+    height: 375rpx;
+}
+swiper{
+    width: 750rpx;
+    height: 375rpx;
+}
+page{
+    background-color: #f8f8f8;
+}
+.cardwrap{
+    background-color: #fff;
+    margin: 30rpx 15rpx;
+    border-radius: 30rpx;
+    line-height: 2em;
+    padding-bottom: 30rpx;
+    padding-top: 90rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    -webkit-box-shadow:0px 5px 8px rgba(0, 0, 0, .1);  
+  -moz-box-shadow:0px 5px 8px rgba(0, 0, 0, .1);  
+  box-shadow:0px 5px 8px rgba(0, 0, 0, .1);
+  position: relative;
+
+}
+.endtime{
+    font-size: 9pt;
+    color: #888;
+}
+.hint{
+    background-color: #30c17b;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-radius: 30rpx;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;
+    font-size: 11pt;
+    text-align: center;
+}
+.desc{
+    color: #353535;
+    font-size: 10pt;
+    line-height: 1.4em;
+    margin-top: 20rpx;
+}
+.title{
+    font-size: 14pt;
+}
+.nothing{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 400rpx;
+    color: #353535;
+    line-height: 1.41em;
+}

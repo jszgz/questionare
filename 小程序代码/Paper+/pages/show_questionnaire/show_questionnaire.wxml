@@ -1,0 +1,97 @@
+<page>
+  <block wx:if="{{currentpage==0}}">
+    <view id="preface_view">
+      <image src="{{preface_url}}" id="preface"></image>
+    </view>
+    <view id="content">
+      <view id="title">
+        《{{survey.surveyname}}》
+      </view>
+      <view id="description">
+        {{survey.surveydescription}}
+      </view>
+      <view id="bottom">
+        <view id="time">
+          预计用时：{{survey.queses.length*10}}秒
+        </view>
+        <view id="owner">
+          调研人：{{survey.user.nickName}}
+        </view>
+        <view id="startbutton">
+          <button type="primary" bindtap="nextpage">开始答卷</button>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{currentpage==1}}">
+    <form bindsubmit="complete">
+      <block wx:for="{{survey.queses}}" wx:key="quesorder">
+        <block wx:if="{{true}}">
+          <view class="subject">
+            <view class="question">{{item.quesorder}}.{{item.quescontent}}</view>
+            <block wx:if="{{item.questype.typeid==1}}">
+              <view class="tint">单选题</view>
+              <view class="optionwrap">
+                <radio-group name="ques{{item.quesorder}}">
+                  <block wx:for="{{item.optionsForQuesid}}" wx:for-item="subitem" wx:key="optioncontent">
+                    <label class="option">
+                      <view>
+                        <radio value="{{subitem.optionid}}"></radio>
+                      </view>
+                      <view class="cell">
+                        {{subitem.optioncontent}}
+                      </view>
+                    </label>
+                  </block>
+                </radio-group>
+              </view>
+            </block>
+            <block wx:if="{{item.questype.typeid==2}}">
+              <view class="tint">多选题</view>
+              <view class="optionwrap">
+                <checkbox-group name="ques{{item.quesorder}}">
+                  <block wx:for="{{item.optionsForQuesid}}" wx:for-item="subitem" wx:key="optioncontent">
+                    <label class="option" bindtap="">
+                      <view>
+                        <checkbox value="{{subitem.optionid}}"></checkbox>
+                      </view>
+                      <view class="cell">
+                        {{subitem.optioncontent}}
+                      </view>
+                    </label>
+                  </block>
+                </checkbox-group>
+              </view>
+            </block>
+            <block wx:if="{{item.questype.typeid==3}}">
+              <view class="tint">填空题</view>
+              <view class="optionwrap">
+                <view class="option">
+                  <input name="answer{{item.quesorder}}" placeholder="请填写回答内容" style="width:100%" />
+                  <input name="ques{{item.quesorder}}" value="{{item.optionsForQuesid[0].optionid}}" style="display:none" />
+                </view>
+              </view>
+            </block>
+          </view>
+        </block>
+      </block>
+      <block>
+        <view class="next">
+          <button type="primary" class="nextques" form-type="submit">提交</button>
+        </view>
+      </block>
+    </form>
+  </block>
+  <block wx:if="{{currentpage==2}}">
+    <view id="thankswrap">
+    <icon type="success" size="100"></icon>
+    <view class="thanks">
+      提交成功
+    </view>
+    <view class="thankscontent">
+      岂止问卷团队感谢您！！！！！！
+    </view>
+    <button bindtap="navback" type="primary" id="yes">确定</button>
+  </view>
+  </block>
+</page>
